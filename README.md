@@ -1,92 +1,88 @@
-# 🌸 AI 情绪回应 Demo｜自我怀疑主题
+#🌸 AI Emotion Response Demo | Self-Doubt Theme
 
-一个关于 “自我怀疑” 的温柔实验，旨在用简单的关键词匹配方式，为处于低落时刻的你提供一丝安慰。
-这是一个轻量的 AI 情感回应 Demo，未来计划拓展为更智能的情绪识别与陪伴系统。
+A gentle experiment focused on the theme of self-doubt, designed to offer a bit of comfort during low moments using simple keyword-based matching.
 
-⸻
-
-🧠 功能简介
-	•	基于关键词的情绪语句匹配
-	•	随机输出温柔回应，陪你度过情绪低谷
-	•	使用本地 Excel 文件作为语料数据库
-	•	简单交互界面：输入情绪 → 得到回应 → 随时退出
+This is a lightweight AI emotion response demo, with future plans to evolve into a more intelligent emotional recognition and support system.
 
 ⸻
 
-📂 项目结构
+🧠 Features
+	•	Emotion statement matching via keywords
+	•	Gentle, randomized responses to help you through emotional lows
+	•	Uses a local Excel file as the emotional response database
+	•	Simple interaction: enter your feeling → get a response → exit anytime
+
+⸻
+
+📂 Project Structure
 
 AI-self-doubt-Demo-1/
 │
 ├── src/
-│   └── aiLogic2.py          # 主程序逻辑（关键词匹配与回应输出）
+│   └── aiLogic2.py          # Main logic: keyword matching & response output
 │
-├── 情绪安慰语料.xlsx         # 关键词与回应语料库（已上传至仓库）
+├── emotion_responses.xlsx   # Keyword-response database (included in repo)
 │
-└── README.md                # 项目说明
+└── README.md                # Project description
 
 
 
 ⸻
 
-📄 数据文件说明
+📄 Data File Description
 
-情绪安慰语料.xlsx 包含两列：
+emotion_responses.xlsx contains two columns:
 
-关键词（用顿号分隔）	回应语句
-拖延、焦虑、失败	慢慢来也没关系，你已经在努力了。
+Keywords (separated by commas)	Response
+procrastination, anxiety, failure	It’s okay to take things slow—you’re already trying your best.
 
-	•	每一行表示一个情绪关键词组合及其对应回应
-	•	支持一个用户输入匹配多个关键词，系统将随机返回其中一句回应
+	•	Each row represents a combination of emotion keywords and its corresponding gentle response
+	•	Supports user input matching multiple keywords; system will randomly return one matching response
 
 ⸻
 
-🚀 快速开始
-
-1. 安装依赖
+🚀 Quick Start
+	1.	Install dependencies
 
 pip install pandas openpyxl
 
-2. 运行程序
+	2.	Run the program
 
 python src/aiLogic2.py
 
-你将看到提示：
+You will see this prompt:
 
-欢迎进入智能回应系统 💗 输入“退出”即可结束。
-你可以告诉我你现在的感受，比如：‘我有点怕失去’、‘最近很焦虑’...
-
-
+Welcome to the Smart Response System 💗 Type “exit” to leave anytime.
+Tell me how you’re feeling. For example: “I feel anxious lately” or “I’m afraid of not being enough”…
 
 ⸻
 
-💬 示例对话
+💬 Sample Dialogue
 
-你说：我好像总是拖延
-回应：慢慢来也没关系，你已经在努力了。
+You: I always procrastinate
+→ Response: It’s okay to take things slow—you’re already trying your best.
 
-你说：我怕我不够好
-回应：你值得被喜欢，即使你现在不相信。
+You: I’m afraid I’m not good enough
+→ Response: You deserve to be loved, even if you don’t believe it right now.
 
-你说：退出
-谢谢你愿意表达，我们下次再聊~ 🌙
-
-
+You: exit
+→ Response: Thank you for opening up. Let’s talk again next time~ 🌙
 
 ⸻
 
-🔮 后续计划
-	•	✅ 优化匹配逻辑（更灵活的自然语言理解）
-	•	🔧 改写为模块化后端，便于接入前端页面或其他系统
-	•	🌐 提供 API 接口，实现网页/移动端联动
-	•	🧠 探索情绪识别模型，引入 NLP 或深度学习实现更智能的回应
-	•	🎨 加入GUI界面版本，提升交互体验
+🔮 Roadmap
+	•	✅ Improve matching logic (more flexible natural language understanding)
+	•	🔧 Refactor to modular backend for easier frontend/API integration
+	•	🌐 Provide API endpoints for web/mobile apps
+	•	🧠 Explore emotion recognition using NLP/deep learning
+	•	🎨 Build GUI version for enhanced user experience
 
 ⸻
 
-💡 初衷
+💡 Why This Project
 
-不是所有时刻都有人倾听，但你依旧值得被回应。
-这个项目只是一个小小的尝试，希望它能在你犹疑的时候，带来一点点温柔。
+Not every moment has someone there to listen—but you still deserve to be heard.
+This is just a small experiment, hoping to bring a bit of gentleness when you need it the most.
 
 ⸻
 
